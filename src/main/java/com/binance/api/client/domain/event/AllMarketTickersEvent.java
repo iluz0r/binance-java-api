@@ -20,49 +20,43 @@ public class AllMarketTickersEvent {
 	private String symbol;
 
 	@JsonProperty("p")
-	private double priceChange;
+	private String priceChange;
 
 	@JsonProperty("P")
-	private double priceChangePercent;
+	private String priceChangePercent;
 
 	@JsonProperty("w")
-	private double weightedAveragePrice;
+	private String weightedAveragePrice;
 
 	@JsonProperty("x")
-	private double previousDaysClosePrice;
+	private String previousDaysClosePrice;
 
 	@JsonProperty("c")
-	private double currentDaysClosePrice;
+	private String currentDaysClosePrice;
 
 	@JsonProperty("Q")
-	private double closeTradesQuantity;
+	private String closeTradesQuantity;
 
 	@JsonProperty("a")
-	private double bestAskPrice;
+	private String bestAskPrice;
 
 	@JsonProperty("A")
-	private double bestAskQuantity;
-
-	@JsonProperty("b")
-	private double bestBidPrice;
-
-	@JsonProperty("B")
-	private double bestBidQuantity;
+	private String bestAskQuantity;
 
 	@JsonProperty("o")
-	private double openPrice;
+	private String openPrice;
 
 	@JsonProperty("h")
-	private double highPrice;
+	private String highPrice;
 
 	@JsonProperty("l")
-	private double lowPrice;
+	private String lowPrice;
 
 	@JsonProperty("v")
-	private double totalTradedBaseAssetVolume;
+	private String totalTradedBaseAssetVolume;
 
 	@JsonProperty("q")
-	private double totalTradedQuoteAssetVolume;
+	private String totalTradedQuoteAssetVolume;
 
 	@JsonProperty("O")
 	private long statisticesOpenTime;
@@ -103,123 +97,107 @@ public class AllMarketTickersEvent {
 		this.symbol = symbol;
 	}
 
-	public double getPriceChange() {
+	public String getPriceChange() {
 		return priceChange;
 	}
 
-	public void setPriceChange(double priceChange) {
+	public void setPriceChange(String priceChange) {
 		this.priceChange = priceChange;
 	}
 
-	public double getPriceChangePercent() {
+	public String getPriceChangePercent() {
 		return priceChangePercent;
 	}
 
-	public void setPriceChangePercent(double priceChangePercent) {
+	public void setPriceChangePercent(String priceChangePercent) {
 		this.priceChangePercent = priceChangePercent;
 	}
 
-	public double getWeightedAveragePrice() {
+	public String getWeightedAveragePrice() {
 		return weightedAveragePrice;
 	}
 
-	public void setWeightedAveragePrice(double weightedAveragePrice) {
+	public void setWeightedAveragePrice(String weightedAveragePrice) {
 		this.weightedAveragePrice = weightedAveragePrice;
 	}
 
-	public double getPreviousDaysClosePrice() {
+	public String getPreviousDaysClosePrice() {
 		return previousDaysClosePrice;
 	}
 
-	public void setPreviousDaysClosePrice(double previousDaysClosePrice) {
+	public void setPreviousDaysClosePrice(String previousDaysClosePrice) {
 		this.previousDaysClosePrice = previousDaysClosePrice;
 	}
 
-	public double getCurrentDaysClosePrice() {
+	public String getCurrentDaysClosePrice() {
 		return currentDaysClosePrice;
 	}
 
-	public void setCurrentDaysClosePrice(double currentDaysClosePrice) {
+	public void setCurrentDaysClosePrice(String currentDaysClosePrice) {
 		this.currentDaysClosePrice = currentDaysClosePrice;
 	}
 
-	public double getCloseTradesQuantity() {
+	public String getCloseTradesQuantity() {
 		return closeTradesQuantity;
 	}
 
-	public void setCloseTradesQuantity(double closeTradesQuantity) {
+	public void setCloseTradesQuantity(String closeTradesQuantity) {
 		this.closeTradesQuantity = closeTradesQuantity;
 	}
 
-	public double getBestAskPrice() {
+	public String getBestAskPrice() {
 		return bestAskPrice;
 	}
 
-	public void setBestAskPrice(double bestAskPrice) {
+	public void setBestAskPrice(String bestAskPrice) {
 		this.bestAskPrice = bestAskPrice;
 	}
 
-	public double getBestAskQuantity() {
+	public String getBestAskQuantity() {
 		return bestAskQuantity;
 	}
 
-	public void setBestAskQuantity(double bestAskQuantity) {
+	public void setBestAskQuantity(String bestAskQuantity) {
 		this.bestAskQuantity = bestAskQuantity;
 	}
 
-	public double getBestBidPrice() {
-		return bestBidPrice;
-	}
-
-	public void setBestBidPrice(double bestBidPrice) {
-		this.bestBidPrice = bestBidPrice;
-	}
-
-	public double getBestBidQuantity() {
-		return bestBidQuantity;
-	}
-
-	public void setBestBidQuantity(double bestBidQuantity) {
-		this.bestBidQuantity = bestBidQuantity;
-	}
-
-	public double getOpenPrice() {
+	public String getOpenPrice() {
 		return openPrice;
 	}
 
-	public void setOpenPrice(double openPrice) {
+	public void setOpenPrice(String openPrice) {
 		this.openPrice = openPrice;
 	}
 
-	public double getHighPrice() {
+	public String getHighPrice() {
 		return highPrice;
 	}
 
-	public void setHighPrice(double highPrice) {
+	public void setHighPrice(String highPrice) {
 		this.highPrice = highPrice;
 	}
 
-	public double getLowPrice() {
+	public String getLowPrice() {
 		return lowPrice;
 	}
 
-	public void setLowPrice(double lowPrice) {
+	public void setLowPrice(String lowPrice) {
 		this.lowPrice = lowPrice;
 	}
 
-	public double getTotalTradedBaseAssetVolume() {
+	public String getTotalTradedBaseAssetVolume() {
 		return totalTradedBaseAssetVolume;
 	}
 
-	public void setTotalTradedBaseAssetVolume(double totalTradedBaseAssetVolume) {
+	public void setTotalTradedBaseAssetVolume(String totalTradedBaseAssetVolume) {
 		this.totalTradedBaseAssetVolume = totalTradedBaseAssetVolume;
 	}
 
-	public double getTotalTradedQuoteAssetVolume() {
+	public String getTotalTradedQuoteAssetVolume() {
 		return totalTradedQuoteAssetVolume;
 	}
 
-	public void setTotalTradedQuoteAssetVolume(double totalTradedQuoteAssetVolume) {
+	public void setTotalTradedQuoteAssetVolume(String totalTradedQuoteAssetVolume) {
 		this.totalTradedQuoteAssetVolume = totalTradedQuoteAssetVolume;
 	}
 
@@ -271,8 +249,7 @@ public class AllMarketTickersEvent {
 				.append("previousDaysClosePrice", previousDaysClosePrice)
 				.append("currentDaysClosePrice", currentDaysClosePrice)
 				.append("closeTradesQuantity", closeTradesQuantity).append("bestAskPrice", bestAskPrice)
-				.append("bestAskQuantity", bestAskQuantity).append("bestBidPrice", bestBidPrice)
-				.append("bestBidQuantity", bestBidQuantity).append("openPrice", openPrice)
+				.append("bestAskQuantity", bestAskQuantity).append("openPrice", openPrice)
 				.append("highPrice", highPrice).append("lowPrice", lowPrice)
 				.append("totalTradedBaseAssetVolume", totalTradedBaseAssetVolume)
 				.append("totalTradedQuoteAssetVolume", totalTradedQuoteAssetVolume)
